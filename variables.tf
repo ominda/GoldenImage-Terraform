@@ -23,8 +23,8 @@ variable "v_jump_server_ip" {
   type = string
 }
 
-variable "v_amazon_linux2_ami" {
-  type = string
+variable "v_amis" {
+  type = list(string)
 }
 
 variable "v_instance_type" {
@@ -34,3 +34,15 @@ variable "v_instance_type" {
 variable "v_ec2_kp" {
   type = string
 }
+
+variable "v_os_flavour" {
+  type = list(string)
+}
+
+# variable "v_os_ami" {
+#   type = map(object({
+#     name = string
+#     ami = string
+#     type = string
+#   }))
+# }

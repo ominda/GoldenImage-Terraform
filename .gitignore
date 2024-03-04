@@ -38,3 +38,6 @@ terra_plan
 
 # Ignore lock file
 .terraform.lock*
+
+# Ignore workspace file
+GoldenImage-Terraform.code-workspace
