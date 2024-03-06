@@ -23,26 +23,30 @@ variable "v_jump_server_ip" {
   type = string
 }
 
-variable "v_amis" {
-  type = list(string)
-}
+# variable "v_amis" {
+#   type = list(string)
+# }
 
-variable "v_instance_type" {
-  type = string
-}
+# variable "v_instance_type" {
+#   type = string
+# }
 
 variable "v_ec2_kp" {
   type = string
 }
 
-variable "v_os_flavour" {
-  type = list(string)
+# variable "v_os_flavour" {
+#   type = list(string)
+# }
+
+variable "v_os_ami" {
+  type = map(object({
+    name = string
+    ami  = string
+    type = string
+  }))
 }
 
-# variable "v_os_ami" {
-#   type = map(object({
-#     name = string
-#     ami = string
-#     type = string
-#   }))
-# }
+variable "v_transit_gateway_id" {
+  type = string
+}

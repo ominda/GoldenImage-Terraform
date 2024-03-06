@@ -5,10 +5,10 @@ module "m_vpc" {
   cidr               = var.v_vpc_cidr
   public_subnet_cidr = var.v_public_subnet_cidr
   jump_server        = var.v_jump_server_ip
-  amis               = var.v_amis
-  instance_type      = var.v_instance_type
+  # amis               = var.v_amis
+  # instance_type      = var.v_instance_type
   ec2_kp             = var.v_ec2_kp
-  os_flavour         = var.v_os_flavour
-  # amis = var.v_os_ami
-  # os_flavour = var.v_os_ami
+  # os_flavour         = var.v_os_flavour
+  ec2_os_and_amis    = var.v_os_ami
+  transit_gateway_id = var.v_transit_gateway_id
 }
